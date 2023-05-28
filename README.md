@@ -67,4 +67,14 @@ Ova se sluchuva poradi lazy-evaluation.
 4. user != null , user.getPassword() != null , user.getEmail() != null
  Ova se mozhnite sluchaevi za condition kriteriumot (dont care vrednostite se bilo shto).
 
-### Test primerite se dokumentirani so komentari vo kodot od testot.
+### Objasnuvanje za unit testovite.
+
+Bidejki imame 5 test sluchai vo everyBranch koristime 5 assert izrazi( + 1 za da proverime dali runtime exceptionot ja ima specifichnata poraka).
+Vo unit test codeot soodvetniot test slushaj e numeriran i soodvetstuva so onoj vo tabelata. Tabelata e popolneta koristejki debugger za sekoj od test sluchaevite i belzezhenje na soodvetnite rebra.
+1 od ovie test sluchaevi frla exception pa koristime assertThrows,dodeka 4 od ovie test sluchaevi vrajkaat false zaradi toa koristime assert false za sekoj od niv.
+
+Za test sluchaevite od Multiple condition caseot, 3 od niv frlaat exception pa koristime assert throws i assert true za da proverime dali runtime exceptionot go ima ocekuvaniot message. 
+Ovaa proverka za poraka ni pomaga za dokolku pri promeni na kodot nekogash dodademe drug runtimeexception so razlichna poraka da mozhe poednostavno da napravime promeni za testiranje na metodot.
+Posledniot od ovie test sluchai vrajka false bidejki nema validen password i zaradi toa koristime assert false.
+
+
