@@ -37,7 +37,7 @@ class SILab2Test {
         assertFalse(SILab2.function(usr, usrlst));
 
 
-        //Test Case 4 from README.md
+        //Test Case 5 from README.md
         //short password + invalid email
         usr = new User(null,"jakov","jakovdamjanskigmailcom");
         usrlst = new ArrayList<>();
